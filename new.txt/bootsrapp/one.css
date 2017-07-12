@@ -1,0 +1,76 @@
+header {
+  background-color:#4267b2;
+  height: 30px;
+}
+#wrapper {
+  margin-top: 16px;
+margin-bottom: 16px;
+
+}
+
+#main,
+#menu,
+#sidebar {
+	height: 900px;
+	}
+#main{ margin-top:25px;
+}
+
+ #menu { margin-top:25px;
+ }
+	
+#menu{ margin-top:25px;}
+
+#sidebar{ margin-top:25px; }
+	
+ #main,
+#menu,
+#sidebar {
+	 background-color: #e9ebee;
+}
+#header {
+    background-color: #4267b2;
+    color: white;
+}
+.list-heading {
+    padding: 20px 15px 0px 15px;
+}
+footer {
+       height: 30px;
+}
+.white-text {
+  color: white !important;
+}
+.glyphicon
+{
+	font-size:20px;
+}
+	
+.pull-right {
+    float: right !important;
+}
+p {
+	padding: 0px 0px 0px 18px;
+}
+.list-heading {
+    padding: 20px 15px 0 15px;
+}
+.panel-body .glyphicon {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+.text-post {
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.image-post {
+    margin-bottom: 15px;
+}
+#main {
+    overflow: auto;
+}
+#main::scrollbar {
+    display: none;
+}
+
+	
