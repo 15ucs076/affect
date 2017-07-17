@@ -128,26 +128,17 @@ function updateCurrentTime() {
 
      $('#songs').DataTable({
            paging: false
+
        });
 
   updateCurrentTime();
   setInterval(function() {
   updateCurrentTime();
-  },1000);
+},1000);
 
   }
 
-$('.welcome-screen button').on('click', function() {
-    var name = $('#name-input').val();
-    if (name.length > 2) {
-        var message = "Welcome, " + name;
-        $('.main .user-name').text(message);
-        $('.welcome-screen').addClass('hidden');
-        $('.main').removeClass('hidden');
-    } else {
-        $('#name-input').addClass('error');
-    }
-});
+
 
 
 $('.play-icon').on('click', function() {
@@ -174,8 +165,15 @@ $('body').on('keypress', function(event) {
                 }
             }
         }
-        function myFunction() {
-            var x = document.createElement("INPUT");
-            x.setAttribute("type", "range");
-            document.body.appendChild(x);
-        }
+      
+        $('.welcome-screen button').on('click', function() {
+            var name = $('#name-input').val();
+            if (name.length > 2) {
+                var message = "Welcome, " + name;
+                $('.main .user-name').text(message);
+                $('.welcome-screen').addClass('hidden');
+                $('.main').removeClass('hidden');
+            } else {
+                $('#name-input').addClass('error');
+            }
+        });
