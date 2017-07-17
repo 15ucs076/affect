@@ -1,0 +1,295 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+h1 {
+    border: 0;
+    margin: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #BBB;
+}
+
+.welcome-screen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #1f1f1f;
+}
+
+.main header {
+    height: 80px;
+    background-color: #282828;
+    padding: 1rem;
+    color: #FFF;
+}
+
+.main .content {
+    flex:1;
+    background-color: #1f1f1f;
+}
+
+
+#myProgress {
+    width: 700px;
+    background-color: grey;
+    border-radius: 4px;
+    height: 8px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+#myBar {
+    width: 1%;
+    height: 8px;
+    background-color: green;
+    border-radius: 4px;
+
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#effect1 {
+  padding: 20px 20px 20px 20px;
+  margin-right: 50px;
+  border-radius: 60px;
+  cursor: pointer;
+   background-color: #4CAF50;
+  box shadow: 0 9px #999;
+}
+#effect2 {
+  padding: 20px 20px 20px 20px;
+    margin-right: 50px;
+      border-radius: 60px;
+        cursor: pointer;
+         background-color: #4CAF50;
+}
+#effect3 {
+  padding: 20px 20px 20px 20px;
+    margin-right: 50px;
+      border-radius: 60px;
+        cursor: pointer;
+         background-color: #4CAF50;
+}
+#effect4 {
+  padding: 20px 20px 20px 20px;
+    margin-right: 50px;
+      border-radius: 60px;
+        cursor: pointer;
+         background-color: #4CAF50;
+}
+.border{
+  border: 3px solid red;
+}
+
+.player-buttons {
+    display:flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.right.floated {
+    float: right;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.progress-wrapper {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper span {
+    color: #959595;
+}
+
+
+
+.main .content {
+    width: 800px;
+    margin: 2rem auto;
+}
+
+.list-headers {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.list-headers > div {
+    width: 150px;
+    display: inline-block;
+}
+
+.list-headers > div:first-child {
+    width: 330px;
+}
+
+.list-headers > div:last-child {
+    text-align: right;
+}
+
+.song-list .song {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    min-height: 30px;
+    cursor: pointer;
+}
+
+.song > span {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;
+    height: 1rem;
+}
+.song > span:first-child {
+    width: 330px;
+}
+
+.song .song-duration {
+    text-align: right;
+}
+
+.song-list .song:hover {
+    background-color: #282828;
+}
+
+
+.song-length {
+    text-align: right;
+}
+
+
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.current-song-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.current-song-name {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.current-song-album {
+    margin-top: 0.4rem;
+}
+
+.current-song-visual{
+  margin-left: 50px;
+  width: 400px;
+  height:100px;
+  bordr: 2px solid red;
+}
+
+
+.next-page button {
+  position:absolute;
+right: 10px;
+bottom: 15px;
+}
+/*DataTables overrides*/
+table.dataTable tbody tr {
+   background-color: initial;
+   cursor: pointer;
+}
+
+table.dataTable tbody tr:hover {
+   background-color: rgba(0,0,0,0.2);
+   cursor: pointer;
+}
+#songs_info {
+   display: none;
+}
+
+#songs_filter {
+   color: transparent;
+}
+#songs_filter input {
+    width: 300px;
+   margin-bottom: 1rem;
+   font-size: 16px;
+   border-radius: 50px;
+}
+
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+}
+.button pull-right
+ {
+   background-color: #4CAF50; /* Green */
+  display: inline-block;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  color: white;
+
+}
+.main footer {
+    height: 80px;
+    background-color: #282828;
+    padding-top: 1rem;
+}
+#event  {
+  margin-left: 90px;
+  padding: 7px 7px 7px 7px;
+  background-color: green;
+  cursor: pointer;
+
+}
