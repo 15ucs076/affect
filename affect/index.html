@@ -8,11 +8,10 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<!-----------------------------------starting page----------------------------------------------->
-<body>
-    <div class="wrapper">
+<body><!---------------------------body starts here--------------------------------->
+    <div class="wrapper"><!--------------------------------------------wrapper class starts------------------------->
 
-       <section class="welcome-screen hidden">
+       <section class="welcome-screen hidden"><!----------------welcome page starts here---------------------------->
           <span id="music">  <h2><b><i> musicBeaTs</i></b> </h2></span>
             <span id="login"><h1><b> LOGIN </b> </h1></span>
             <div class="input-wrapper">
@@ -24,15 +23,15 @@
                 </div>
               </form>
              </div>
-           </section>
+           </section><!----------------------welcome page ends here---------------------------------------> 
 
-
+<!------------------------------class main starts here------------------------------------>
               <div class="main">
                   <header>
                       <div class="right floated user-name"> </div>
                       <button id="back"><span><b><h2>back</h2></b></span></button>
                   </header>
-
+<!-------------------------------class audio effects starts here------------------------------------------------>
 				 <section class="audio-effects" style="padding-left: 300px; padding-top: 25px;">
 
 						<button  class="chorus a" id="effect1">
@@ -54,11 +53,11 @@
 
 
 				 </section>
-
-                  <section class="content ">
+<!-----------------------class audio effects ends here--------------------------------------------->
+                  <section class="content "><!--------------------class content starts here---------------->
                       <audio src="song1.mp3"></audio>
 
-                      <table id="songs">
+                      <table id="songs"><!---------------songs list starts here---------------------->
                        <thead class="list-headers">
                              <td><b>TITLE </b> </td>
                              <td><b> ARTIST </b> </td>
@@ -93,7 +92,7 @@
                        </tr>
                      </tbody>
                            <!-- </div> -->
-                   </table>
+                   </table><!----------------------------songs list ends here------------------------------->
                         <!-- crrent Song name and image -->
                           <div class="current-song-wrapper">
                               <img src="" class="current-song-image">
@@ -103,11 +102,11 @@
                               </div>
                           </div>
 
-            </section>
+            </section><!---------------------------class content ends here----------------------------------->
 
 
-            <footer>
-                <div class="controls">
+            <footer><!----------------------------------main footer starts--------------------------------------------->
+                <div class="controls"><!---------------------------------class control starts------------------------->
                     <div class="player-buttons">
                        <i class="fa fa-random clickable disabled" aria-hidden="true"></i>
                         <i class="fa fa-step-backward clickable" aria-hidden="true"></i>
@@ -129,10 +128,10 @@
 
 <button class="next-page" id="event"> <b><i>EFFECTS</i></b> </button>
 </div>
-              </div>
-            </footer>
-        </div>
-    </div>
+              </div><!-----------------------------------class controls end------------------------------------>
+            </footer><!-------------------------------------main footer ends------------------------------------------------->
+        </div><!----------------------------------------class main ends here----------------------------------->
+    </div><!--------------------------------------wrapper class ends--------------------------------------->
 
     <script src="jquery.js">
     </script>
@@ -144,6 +143,6 @@
 <script src="affects.js"></script>
     <script src="main.js">
     </script>
-</body>
+</body><!-----------------------------body ends here----------------------------->
 
 </html>
