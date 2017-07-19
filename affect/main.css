@@ -78,32 +78,77 @@ h1 {
   margin-right: 50px;
   border-radius: 60px;
   cursor: pointer;
-   background-color: #4CAF50;
-  box shadow: 0 9px #999;
+   background-color: maroon;
+   color: white;
+   border: none;
+   outline: none;
+    box-shadow: 0 9px #999;
+
+}
+#effect1:hover {background-color: maroon;
+}
+#effect1:active {
+  background-color: maroon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
 }
 #effect2 {
   padding: 20px 20px 20px 20px;
     margin-right: 50px;
       border-radius: 60px;
         cursor: pointer;
-         background-color: #4CAF50;
+         background-color: maroon;
+         border: none;
+         color: white;
+         outline: none;
+           box-shadow: 0 9px #999;
+}
+#effect2:hover {background-color: maroon;
+}
+#effect2:active {
+  background-color: maroon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 #effect3 {
   padding: 20px 20px 20px 20px;
     margin-right: 50px;
       border-radius: 60px;
         cursor: pointer;
-         background-color: #4CAF50;
-}
+         background-color: maroon;
+         border: none;
+         color: white;
+         outline: none;
+           box-shadow: 0 9px #999;
+       }
+       #effect3:hover {background-color: maroon;
+       }
+       #effect3:active {
+         background-color: maroon;
+         box-shadow: 0 5px #666;
+         transform: translateY(4px);
+       }
 #effect4 {
   padding: 20px 20px 20px 20px;
     margin-right: 50px;
       border-radius: 60px;
         cursor: pointer;
-         background-color: #4CAF50;
+         background-color: maroon;
+         border: none;
+         outline: none;
+         color: white;
+           box-shadow: 0 9px #999;
+}
+#effect4:hover {background-color: maroon;
+}
+#effect4:active {
+  background-color: maroon;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 .border{
-  border: 3px solid red;
+  border: 3px solid-red;
 }
 
 .player-buttons {
@@ -226,7 +271,7 @@ h1 {
   margin-left: 50px;
   width: 400px;
   height:100px;
-  bordr: 2px solid red;
+  border: 2px solid red;
 }
 
 
@@ -294,11 +339,12 @@ table.dataTable tbody tr:hover {
   margin-right: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
-  padding: 20px 70px 20px 10px;
+  padding: 20px 100px 20px 10px;
     border-radius: 40px;
     border: none;
-    background-color: black;
+    background-color: maroon;
   color: green;
+  outline: none;
 
 }
 #input {
@@ -306,23 +352,59 @@ table.dataTable tbody tr:hover {
   margin-right:  20px;
   margin-bottom: 20px;
   margin-left: 20px;
-    padding: 20px 70px 20px 10px;
+    padding: 20px 100px 20px 10px;
       border-radius: 40px;
       border:  none;
-    background-color: black;
+    background-color: maroon;
     color: green;
+    outline: none;
 }
 #clickme {
   margin-top:  20px;
   margin-right:  20px;
   margin-bottom: 20px;
   margin-left: 70px;
-    padding: 10px 50px 10px 50px;
+    padding: 0px 40px 0px 50px;
     border-radius: 40px;
     border: none;
     background-color: green;
+ font-size: 20px;
+  transition: all 0.5s;
+  outline: none;
+
 
 }
+#clickme span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#clickme span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  padding-top: 26px;
+  padding-left: 10px;
+}
+
+#clickme:hover span {
+  padding-right: 15px;
+}
+
+#clickme:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 #login {
- color: green;
+ color: black;
+ font-size: 20px;
+}
+#music {
+font-size: 40px;
+color: maroon;
 }
