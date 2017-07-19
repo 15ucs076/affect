@@ -11,22 +11,20 @@
 <body><!---------------------------body starts here--------------------------------->
     <div class="wrapper"><!--------------------------------------------wrapper class starts------------------------->
 
-       <section class="welcome-screen hidden"><!----------------welcome page starts here---------------------------->
+       <section class="welcome-screen"><!----------------welcome page starts here---------------------------->
           <span id="music">  <h2><b><i> musicBeaTs</i></b> </h2></span>
             <span id="login"><h1><b> LOGIN </b> </h1></span>
             <div class="input-wrapper">
-              <form>
-                <div class="loginform"><br/>
+            <div class="loginform"><br/>
                   <input type="text" placeholder="name" id="name-input"><br/>
                 <input type="text" placeholder="password" id="input"><br/>
                 <button id="clickme"><span><b><h3> Log in </h3> </b> </span></button>
                 </div>
-              </form>
-             </div>
-           </section><!----------------------welcome page ends here---------------------------------------> 
+              </div>
+           </section><!----------------------welcome page ends here--------------------------------------->
 
 <!------------------------------class main starts here------------------------------------>
-              <div class="main">
+              <div class="main hidden">
                   <header>
                       <div class="right floated user-name"> </div>
                       <button id="back"><span><b><h2>back</h2></b></span></button>
@@ -50,6 +48,7 @@
 						<button class="wahwah a d" id="effect4">
 							<h1><i> tremolo </i> </h1>
 						</button>
+
 
 
 				 </section>
@@ -122,7 +121,7 @@
                        <span class="song-duration"></span>
 
                         <span class="volume" margin-left:"20px;">
-                        <i class="fa fa-volume-up clickable mute" aria-hidden="true"  onclick="myfunction()"></i>
+                        <i class="fa fa-volume-up clickable" aria-hidden="true"  onclick="myfunction()"></i>
                         <input id="vol-control" type="range" min="0" max="100" value="0"></input>
 </span>
 

@@ -72,8 +72,9 @@ $('.welcome-screen button').on('click', function() {
     if (name.length > 2) {
         var message = "Welcome, " + name;
         $('.main .user-name').text(message);
-        $('.welcome-screen').addClass('hidden');
         $('.main').removeClass('hidden');
+        console.log('hey hey');
+        $('.welcome-screen').addClass('hidden');
     } else {
         $('#name-input').addClass('error');
     }
@@ -180,4 +181,17 @@ $('body').on('keypress', function(event) {
             var x = document.createElement("INPUT");
             x.setAttribute("type", "range");
             document.body.appendChild(x);
+        }
+        var x = document.getElementById("song-list");
+
+        function getVolume() {
+            alert(x.volume);
+        }
+
+        function setHalfVolume() {
+            x.volume = 0.2;
+        }
+
+        function setFullVolume() {
+            x.volume = 1.0;
         }

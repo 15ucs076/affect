@@ -73,6 +73,8 @@ var b = document.querySelector('.b');
 var c = document.querySelector('.c');
 var d = document.querySelector('.d');
 
+var x = 0;
+var y = 0;
 a.addEventListener('click',function(e){
 	console.log(this);
 	$(this).toggleClass("border");
